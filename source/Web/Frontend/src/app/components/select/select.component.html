@@ -1,0 +1,4 @@
+<select [disabled]="disabled" [name]="name" [(ngModel)]="ngModel" [required]="required">
+    <option selected value [disabled]="required"></option>
+    <option *ngFor="let option of options" [value]="option.value">{{ option.text }}</option>
+</select>
